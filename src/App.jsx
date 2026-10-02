@@ -98,6 +98,9 @@ export default function App() {
             Always stay happy & keep smiling my princess.
           </h6>
           <div className="animate-heart">❤️</div>
+          <div classNamme="footer-copyright">
+            © {new Date().getFullYear()}Birthday 20. Designed and developed by Sohan for Sanyukta. All Rights Reserved.
+          </div>
         </section>
       </div>
     </div>
