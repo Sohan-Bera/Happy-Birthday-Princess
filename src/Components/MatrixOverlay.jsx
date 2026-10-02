@@ -157,7 +157,7 @@ export default function MatrixOverlay({ oldAge, newAge, onComplete }) {
           }}
           className="matrix-btn"
         >
-          Let's open your surprise {newAge}
+          Let's open your surprise
         </button>
       )}
     </div>
