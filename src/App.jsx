@@ -69,7 +69,10 @@ export default function App() {
         <div className="bg-gradient-sky" />
         <div className="bg-stars" />
 
-        <section className="hero-section">
+        <section 
+          className="hero-section"
+          style={{ '--hero-bg': `url(${import.meta.env.BASE_URL}Landing-Page-rose.png)` }}
+        >
           <div>
             <h1 className="hero-title">
               Happy Birthday
@@ -87,7 +90,10 @@ export default function App() {
 
         <StoryBook />
 
-        <section className="footer-section">
+        <section 
+          className="footer-section"
+          style={{ '--footer-bg': `url(${import.meta.env.BASE_URL}Aurora-Footer.png)` }}
+        >
           <h6 className="footer-title">
             Always stay happy & keep smiling my princess.
           </h6>
