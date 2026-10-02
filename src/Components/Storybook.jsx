@@ -4,37 +4,32 @@ const MEMORIES = [
   {
     id: 1,
     title: "Happy Birthday Sweety",
-
     desc: "Wishing a fantastic birthday to the most fantastic person. Also who brings so much positive energy to everyone around her. May this next year be full with great adventure and full of joy.",
-    image: "Birthday Cake.png",
+    image: "Birthday-Cake.png",
   },
   {
     id: 2,
     title: "Wishes Comes True",
-
-    desc: "May all you wishlisted iteam and dreams fulfilled and comes true. Just stay positive and never loose hope. Just trust the process.",
-    image: "Wishlist image.jpg",
+    desc: "May all you wishlisted item and dreams fulfilled and comes true. Just stay positive and never loose hope. Just trust the process.",
+    image: "Wishlist-image.jpg",
   },
   {
     id: 3,
     title: "Gentle Heart Sweetest Smile",
-  
     desc: "You carry a soft, effortless warmth wherever you go, but nothing lights up the world quite like your smile. Your gentle heart brings comfort to everyone around you, and your laughter is pure magic. Keep smiling, sweet soul—your joy is the most beautiful thing in this world.",
-    image: "Plumeria Card.png",
+    image: "Plumeria-Card.png",
   },
   {
     id: 4,
     title: "Beauty Overloaded",
-  
     desc: "In a world of quiet shadows, your radiance shines with an intensity that leaves me utterly captivated. Every glance at you turns my world upside down and my heart into a rushing storm of adoration.",
-    image: "My Flowers.jpeg",
+    image: "My-Flowers.jpeg",
   },
   {
     id: 5,
     title: "Forever Your Biggest Admirer",
-
     desc: "From every gentle laugh to every dream you chase, you never fail to amaze me. Celebrating twenty years of your magic is special, but loving you through it all is my greatest joy. Forever in your corner, forever your biggest admirer.",
-    image: "Last card.jpg",
+    image: "Last-card.jpg",
   }
 ];
 
@@ -55,6 +50,7 @@ export default function StoryBook() {
       setLetterState('opened');
     }, 1100);
   };
+
   const nextCard = () => {
     if (isAnimating || cards.length <= 1) return;
     setAnimDirection('next');
@@ -138,7 +134,7 @@ export default function StoryBook() {
             </div>
 
           </div>
-          <p className="tap-hint">Tap the seal to open your letter. After finished<br />reading you can scroll to see your delution.</p>
+          <p className="tap-hint">Tap the seal to open your letter. After finishing<br />reading you can scroll to see your dedication.</p>
         </div>
       ) : (
         <div className="revealed-storybook-container">
@@ -170,8 +166,9 @@ export default function StoryBook() {
               return (
                 <div key={card.id} className={cardClass}>
                   <div className="card-photo-wrapper">
+                    {/* Dynamic Base URL attached here */}
                     <img
-                      src={card.image}
+                      src={`${import.meta.env.BASE_URL}${card.image}`}
                       alt={card.title}
                       className="card-photo"
                       draggable="false"

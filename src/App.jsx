@@ -11,19 +11,34 @@ export default function App() {
   const handleMatrixComplete = () => {
     setIntroStage('zoom');
 
-    // Extended to 2.8s to give ample time to see, read, and feel the "20"
     setTimeout(() => {
       setIntroStage('hero');
     }, 2800);
   };
 
-  // Play background music automatically as soon as the hero/landing page activates
   useEffect(() => {
     if (introStage === 'hero' && audioRef.current) {
-      audioRef.current.volume = 0.4; // Sets background volume (0.0 to 1.0)
-      audioRef.current.play().catch((err) => {
-        console.log("Autoplay prevented by browser:", err);
-      });
+      audioRef.current.volume = 0.4;
+      
+      const playAudio = () => {
+        audioRef.current?.play().then(() => {
+          window.removeEventListener('click', playAudio);
+          window.removeEventListener('touchstart', playAudio);
+        }).catch((err) => {
+          console.log("Waiting for user interaction to play audio:", err);
+        });
+      };
+
+      playAudio();
+
+      // Fallback: Starts music on first click/tap anywhere on the screen if browser blocks autoplay
+      window.addEventListener('click', playAudio);
+      window.addEventListener('touchstart', playAudio);
+
+      return () => {
+        window.removeEventListener('click', playAudio);
+        window.removeEventListener('touchstart', playAudio);
+      };
     }
   }, [introStage]);
 
@@ -34,10 +49,10 @@ export default function App() {
 
   return (
     <div className="app-container">
-      {/* Background Audio Element */}
+      {/* Dynamic Base URL ensures correct path on GitHub Pages */}
       <audio 
         ref={audioRef} 
-        src="nimbus-roger-gabalda-main-version-45511-03-39.mp3" /* Make sure your audio file is in public/music/ */
+        src={`${import.meta.env.BASE_URL}nimbus-roger-gabalda-main.mp3`} 
         loop 
         preload="auto" 
       />
@@ -61,7 +76,7 @@ export default function App() {
               <span className="hero-title-sub">Sanyukta💖</span>
             </h1>
             <p className="hero-desc">
-             Amidst the quiet chaos of the world, your presence is my peace and your voice is my home. 
+              Amidst the quiet chaos of the world, your presence is my peace and your voice is my home. 
               I'm happy to get a person like you.<br />All happyness belongs to you.<br /> Happy 20th birthday, my love.
             </p>
             <button onClick={scrollToStory} className="btn-primary">
