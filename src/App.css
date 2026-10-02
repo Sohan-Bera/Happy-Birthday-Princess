@@ -228,7 +228,7 @@ body {
     background-position: senter center;
   }
 }
-@media (max-width: 480px)and(min-aspect-ratio: 9/20){
+@media (max-width: 480px) and (min-aspect-ratio: 9/20){
   .hero-section{
     background-position: center 25%;
   }
