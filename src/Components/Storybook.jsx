@@ -10,13 +10,13 @@ const MEMORIES = [
   {
     id: 2,
     title: "Wishes Comes True",
-    desc: "May all you wishlisted item and dreams fulfilled and comes true. Just stay positive and never loose hope. Just trust the process.",
+    desc: "May every wish on your list and every dream in your heart come true. Keep believing, stay positive and trust the journey.",
     image: "Wishlist-image.jpg",
   },
   {
     id: 3,
     title: "Gentle Heart Sweetest Smile",
-    desc: "You carry a soft, effortless warmth wherever you go, but nothing lights up the world quite like your smile. Your gentle heart brings comfort to everyone around you, and your laughter is pure magic. Keep smiling, sweet soul—your joy is the most beautiful thing in this world.",
+    desc: "You carry a soft, effortless warmth wherever you go, but nothing lights up the world quite like your smile. Your gentle heart brings comfort to everyone around you, and your laughter is pure magic. Keep smiling, sweet soul.",
     image: "Plumeria-Card.png",
   },
   {
@@ -103,7 +103,7 @@ export default function StoryBook() {
   return (
     <section id="story" className="storybook-section">
       <div className="storybook-header">
-        <h2 className="storybook-title">Moments Frozen in Time</h2>
+        <h2 className="storybook-title">Some Messages Written Only for You</h2>
       </div>
 
       {letterState !== 'opened' ? (
@@ -134,7 +134,7 @@ export default function StoryBook() {
             </div>
 
           </div>
-          <p className="tap-hint">Tap the seal to open your letter. After finishing<br />reading you can scroll to see your dedication.</p>
+          <p className="tap-hint">Tap the seal to open your letter. After finished<br />reading you can scroll next.</p>
         </div>
       ) : (
         <div className="revealed-storybook-container">

@@ -95,12 +95,9 @@ export default function App() {
           style={{ '--footer-bg': `url(${import.meta.env.BASE_URL}Aurora-Footer.png)` }}
         >
           <h6 className="footer-title">
-            Always stay happy & keep smiling my princess.
+            Wishing you a great Happy Birthday.<br />Always stay happy & keep smiling my princess.
           </h6>
           <div className="animate-heart">❤️</div>
-          <div classNamme="footer-copyright">
-            © {new Date().getFullYear()}Birthday 20. Designed and developed by Sohan for Sanyukta. All Rights Reserved.
-          </div>
         </section>
       </div>
     </div>

@@ -112,7 +112,7 @@ export default function MatrixOverlay({ oldAge, newAge, onComplete }) {
 
         if (burnProgress >= 1.2) {
           state = "NEW_AGE";
-          setSubtitle("FOREVER & ALWAYS ❤️🎉🎈");
+          setSubtitle("THE BEST IS YET TO COME 🎉🎈");
           setTimeout(() => setShowBtn(true), 400);
         }
       } else if (state === "NEW_AGE") {
@@ -157,7 +157,7 @@ export default function MatrixOverlay({ oldAge, newAge, onComplete }) {
           }}
           className="matrix-btn"
         >
-          Let's enter in {newAge}
+          Let's open your surprise {newAge}
         </button>
       )}
     </div>
