@@ -18,7 +18,7 @@ export default function App() {
 
   useEffect(() => {
     if (introStage === 'hero' && audioRef.current) {
-      audioRef.current.volume = 0.4;
+      audioRef.current.volume = 1.0;
       
       const playAudio = () => {
         audioRef.current?.play().then(() => {
