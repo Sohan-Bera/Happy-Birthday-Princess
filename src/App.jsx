@@ -92,7 +92,7 @@ export default function App() {
 
         <section 
           className="footer-section"
-          style={{ '--footer-bg': `url(${import.meta.env.BASE_URL})Aurora-propose.jpg` }}
+          style={{ '--footer-bg': `url(${import.meta.env.BASE_URL})public/Aurora-propose.jpg` }}
         >
           <h6 className="footer-title">
             Wishing you a great Happy Birthday.<br />Always stay happy & keep smiling my princess.
