@@ -95,9 +95,9 @@ export default function App() {
           style={{ '--footer-bg': `url(${import.meta.env.BASE_URL}Aurora-propose.jpg)` }}
         >
           <h6 className="footer-title">
-            <br />Always with you. Stay happy & keep smiling my princess.<br />Never loose hope.
+            <br />Always with you, Sanyukta. Stay happy & keep smiling my princess.
           </h6>
-          <div className="animate-heart">❤️Sanyukta❤️</div>
+          <div className="animate-heart">❤️❤️</div>
         </section>
       </div>
     </div>
