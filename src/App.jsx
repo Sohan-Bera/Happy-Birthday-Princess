@@ -92,12 +92,12 @@ export default function App() {
 
         <section 
           className="footer-section"
-          style={{ '--footer-bg': `url(${import.meta.env.BASE_URL}Aurora-Footer.png)` }}
+          style={{ '--footer-bg': `url(${import.meta.env.BASE_URL})Aurora-propose.jpg` }}
         >
           <h6 className="footer-title">
             Wishing you a great Happy Birthday.<br />Always stay happy & keep smiling my princess.
           </h6>
-          <div className="animate-heart">❤️</div>
+          <div className="animate-heart">Developed with ❤️ for Sanyukta</div>
         </section>
       </div>
     </div>
