@@ -100,7 +100,7 @@ export default function App() {
             playsInline
             preload="auto"
           >
-            <source src={`${import.meta.env.BASE_URL}public/FooterVideo.mp4`} type="video/mp4" />
+            <source src={`${import.meta.env.BASE_URL}publicFooter-Video.mp4`} type="video/mp4" />
           </video>
 
           <div className="footer-content">
