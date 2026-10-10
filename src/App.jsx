@@ -97,7 +97,7 @@ export default function App() {
           <h6 className="footer-title">
             Wishing you a great Happy Birthday.<br />Always stay happy & keep smiling my princess.
           </h6>
-          <div className="animate-heart">Developed with ❤️ for Sanyukta</div>
+          <div className="animate-heart">❤️Sanyukta❤️</div>
         </section>
       </div>
     </div>
