@@ -90,14 +90,29 @@ export default function App() {
 
         <StoryBook />
 
-        <section 
-          className="footer-section"
-          style={{ '--footer-bg': `url(${import.meta.env.BASE_URL}Aurora-Footer.png)` }}
-        >
-          <h6 className="footer-title">
-            Wishing you a great Happy Birthday.<br />Always stay happy & keep smiling my princess.
-          </h6>
-          <div className="animate-heart">❤️</div>
+        <section className="footer-section">
+          {/* Looping Footer Background Video */}
+          <video 
+            className="footer-video"
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            preload="auto"
+          >
+            <source src={`${import.meta.env.BASE_URL}public/FooterVideo.mp4`} type="video/mp4" />
+          </video>
+
+          <div className="footer-content">
+            <h6 className="footer-title">
+              Wishing you a great Happy Birthday.<br />Always stay happy & keep smiling my princess.
+            </h6>
+            <div className="animate-heart">❤️</div>
+          </div>
+
+          <div className="footer-copyright">
+            © {new Date().getFullYear()} Sohan Bera. All Rights Reserved.
+          </div>
         </section>
       </div>
     </div>
