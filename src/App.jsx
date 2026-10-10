@@ -69,18 +69,27 @@ export default function App() {
         <div className="bg-gradient-sky" />
         <div className="bg-stars" />
 
-        <section 
-          className="hero-section"
-          style={{ '--hero-bg': `url(${import.meta.env.BASE_URL}Landing-Page-rose.png)` }}
-        >
-          <div>
+        {/* Hero Section with Looping Background Video */}
+        <section className="hero-section">
+          <video 
+            className="hero-video"
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            preload="auto"
+          >
+            <source src={`${import.meta.env.BASE_URL}public/Footer-Video.mp4`} type="video/mp4" />
+          </video>
+
+          <div className="hero-content-wrapper">
             <h1 className="hero-title">
               Happy Birthday
               <span className="hero-title-sub">Sanyukta💖</span>
             </h1>
             <p className="hero-desc">
               Amidst the quiet chaos of the world, your presence is my peace and your voice is my home. 
-              I'm happy to get a person like you.<br />All happyness belongs to you.<br /> Happy 20th birthday, my love.
+              I'm happy to get a person like you.<br />All happiness belongs to you.<br /> Happy 20th birthday, my love.
             </p>
             <button onClick={scrollToStory} className="btn-primary">
               EXPLORE NEXT
@@ -90,14 +99,21 @@ export default function App() {
 
         <StoryBook />
 
+        {/* Footer Section with Image Background & Copyright */}
         <section 
           className="footer-section"
           style={{ '--footer-bg': `url(${import.meta.env.BASE_URL}Aurora-Footer.png)` }}
         >
-          <h6 className="footer-title">
-            Wishing you a great Happy Birthday.<br />Always stay happy & keep smiling my princess.
-          </h6>
-          <div className="animate-heart">❤️</div>
+          <div className="footer-content">
+            <h6 className="footer-title">
+              Wishing you a great Happy Birthday.<br />Always stay happy & keep smiling my princess.
+            </h6>
+            <div className="animate-heart">❤️</div>
+          </div>
+
+          <div className="footer-copyright">
+            © {new Date().getFullYear()} Sohan Bera. All Rights Reserved.
+          </div>
         </section>
       </div>
     </div>
