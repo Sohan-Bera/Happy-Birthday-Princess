@@ -651,12 +651,12 @@ body {
 }
 
 .footer-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Georgia, serif;
   font-weight: 400;
   margin: 0 auto 10px;
   max-width: 500px;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 /* Netflix Zoom Overlay Container */
 .netflix-zoom-overlay {
