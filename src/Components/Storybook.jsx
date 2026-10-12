@@ -29,7 +29,7 @@ const MEMORIES = [
     id: 5,
     title: "Forever Your Biggest Admirer",
     desc: "From every gentle laugh to every dream you chase, you never fail to amaze me. Celebrating twenty years of your magic is special, but loving you through it all is my greatest joy. Forever in your corner, forever your biggest admirer.",
-    image: "Last-card.jpg",
+    image: "Admire-card.jpg",
   }
 ];
 
