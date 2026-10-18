@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react';
 const MEMORIES = [
   {
     id: 1,
-    title: "Happy Birthday Sweety",
+    title: "Happy Birthday Beautiful",
     desc: "Wishing a fantastic birthday to the most fantastic person. Also who brings so much positive energy to everyone around her. May this next year be full with great adventure and full of joy.",
     image: "Birthday-Cake.png",
   },
@@ -23,7 +23,7 @@ const MEMORIES = [
     id: 4,
     title: "Beauty Overloaded",
     desc: "In a world of quiet shadows, your radiance shines with an intensity that leaves me utterly captivated. Every glance at you turns my world upside down and my heart into a rushing storm of adoration.",
-    image: "My-Flowers.jpeg",
+    image: "beauty.jpeg",
   },
   {
     id: 5,
