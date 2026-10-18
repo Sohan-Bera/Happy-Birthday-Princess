@@ -95,7 +95,7 @@ export default function App() {
           style={{ '--footer-bg': `url(${import.meta.env.BASE_URL}Aurora-propose.jpg)` }}
         >
           <h4 className="footer-title">
-            Leave the past behind and begin anew with confidence, hope, and a smile. There is still a long, bright path ahead to walk.
+            Leave the past behind and begin a new with confidence, hope, and a smile. There is still a long, bright path ahead to walk.
           </h4>
           <div className="animate-heart">❤️</div>
         </section>
