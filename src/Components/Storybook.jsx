@@ -103,7 +103,7 @@ export default function StoryBook() {
   return (
     <section id="story" className="storybook-section">
       <div className="storybook-header">
-        <h2 className="storybook-title">Some Messages Written Only for You</h2>
+        <h2 className="storybook-title">Messages Written Only for You</h2>
       </div>
 
       {letterState !== 'opened' ? (
