@@ -112,7 +112,7 @@ export default function MatrixOverlay({ oldAge, newAge, onComplete }) {
 
         if (burnProgress >= 1.2) {
           state = "NEW_AGE";
-          setSubtitle("THE BEST IS YET TO COME 🎉🎈");
+          setSubtitle("YOUR SPECIAL DAY HAS ARRIVED 🎉🎈");
           setTimeout(() => setShowBtn(true), 400);
         }
       } else if (state === "NEW_AGE") {

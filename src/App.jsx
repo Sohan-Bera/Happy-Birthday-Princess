@@ -80,7 +80,7 @@ export default function App() {
             </h1>
             <p className="hero-desc">
               Amidst the quiet chaos of the world, your presence is my peace and your voice is my home. 
-              I'm happy to get a person like you.<br />All happyness belongs to you.<br /> Happy 20th birthday, my love.
+              I'm greatful to have a person like you in my life.<br />All happiness belongs to you.<br /> Happy 20th birthday, to my lovely lady.
             </p>
             <button onClick={scrollToStory} className="btn-primary">
               EXPLORE NEXT
