@@ -115,7 +115,7 @@ export default function StoryBook() {
 
             {/* Letter Inside */}
             <div className="letter-paper">
-              <h4 className="letter-heading">For My Love</h4>
+              <h4 className="letter-heading">For My Madam ji</h4>
             </div>
 
             {/* Left & Right Side Pocket Folds */}
